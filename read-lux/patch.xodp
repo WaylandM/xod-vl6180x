@@ -1,0 +1,24 @@
+{
+  "nodes": [
+    {
+      "description": "#define VL6180X_ALS_GAIN_1 0x06    ///< 1x gain\n#define VL6180X_ALS_GAIN_1_25 0x05 ///< 1.25x gain\n#define VL6180X_ALS_GAIN_1_67 0x04 ///< 1.67x gain\n#define VL6180X_ALS_GAIN_2_5 0x03  ///< 2.5x gain\n#define VL6180X_ALS_GAIN_5 0x02    ///< 5x gain\n#define VL6180X_ALS_GAIN_10 0x01   ///< 10x gain\n#define VL6180X_ALS_GAIN_20 0x00   ///< 20x gain\n#define VL6180X_ALS_GAIN_40 0x07   ///< 40x gain",
+      "id": "B1MgDIJJ_",
+      "label": "GAIN",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "id": "SyYyvIkJu",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
+}

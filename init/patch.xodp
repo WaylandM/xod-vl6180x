@@ -1,0 +1,50 @@
+{
+  "description": "Initialize VL6180X device.",
+  "nodes": [
+    {
+      "description": "Pulse if initialization successful.",
+      "id": "B1_W7UJyu",
+      "label": "OK",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "HJ3TfLkyO",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Trigger for initialization. Default is to initialize on boot.",
+      "id": "S1sAf8JyO",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "A VL61080X device.",
+      "id": "r11E781J_",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-vl6180x-device"
+    }
+  ]
+}

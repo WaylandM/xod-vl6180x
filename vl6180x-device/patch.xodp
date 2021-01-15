@@ -1,0 +1,25 @@
+{
+  "description": "Create VL6180X device.",
+  "nodes": [
+    {
+      "description": "A VL6180X device.",
+      "id": "B11vWIk1u",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/output-self"
+    },
+    {
+      "id": "HJgJPWLJy_",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
+}
