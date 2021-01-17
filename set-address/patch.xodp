@@ -1,2 +1,61 @@
 {
+  "nodes": [
+    {
+      "boundLiterals": {
+        "__out__": "29h"
+      },
+      "description": "I²C address.",
+      "id": "ByyblJzyd",
+      "label": "ADDR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "description": "Update. Trigger for setting address.\n",
+      "id": "HyMMxkfkO",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Set I²C address of VL6180X device.",
+      "id": "SyeelJG1u",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Pulse when address set.",
+      "id": "rJu8g1MJO",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "A VL6180X device.",
+      "id": "ryIDeyM1d",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-vl6180x-device"
+    }
+  ]
 }

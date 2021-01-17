@@ -1,0 +1,120 @@
+{
+  "links": [
+    {
+      "id": "B1NkmfG1O",
+      "input": {
+        "nodeId": "HyTRzMGyd",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SyOAfzzyd",
+        "pinKey": "SJZRwCZ1u"
+      }
+    },
+    {
+      "id": "BJqRzzz1d",
+      "input": {
+        "nodeId": "SyOAfzzyd",
+        "pinKey": "S1GxuCbyO"
+      },
+      "output": {
+        "nodeId": "B1AqMfz1O",
+        "pinKey": "HJUNUkGJ_"
+      }
+    },
+    {
+      "id": "H1ehzMfy_",
+      "input": {
+        "nodeId": "B1AqMfz1O",
+        "pinKey": "rkJyOJMJu"
+      },
+      "output": {
+        "nodeId": "Hy2iGzf1_",
+        "pinKey": "SykJ8wjXN"
+      }
+    },
+    {
+      "id": "HkgCGfz1O",
+      "input": {
+        "nodeId": "SkjpMMfkO",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "B1AqMfz1O",
+        "pinKey": "HybvVw1Myd"
+      }
+    },
+    {
+      "id": "SJy0fzMJO",
+      "input": {
+        "nodeId": "BJo3zGMJ_",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "B1AqMfz1O",
+        "pinKey": "rkH7Iyf1d"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "B1AqMfz1O",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "@/proximity-lux-sensor"
+    },
+    {
+      "id": "BJo3zGMJ_",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "Hy2iGzf1_",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-byte"
+    },
+    {
+      "id": "HyTRzMGyd",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 5
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SkjpMMfkO",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SyOAfzzyd",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "@/translate-status-code-to-text"
+    }
+  ]
+}

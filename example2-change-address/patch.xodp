@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "Bys-QzMyu",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "@/init"
+    },
+    {
+      "id": "H1C-7zMkd",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "type": "@/get-address"
+    },
+    {
+      "id": "SJvW7Gfku",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "@/set-address"
+    },
+    {
+      "id": "Skbbmff1u",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "@/vl6180x-device"
+    }
+  ]
+}

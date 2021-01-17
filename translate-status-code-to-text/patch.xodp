@@ -1,2 +1,36 @@
 {
+  "description": "Translate status code to text string.",
+  "nodes": [
+    {
+      "id": "HJ52vCZku",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Status code output from read-range node.",
+      "id": "S1GxuCbyO",
+      "label": "CODE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "description": "Status as text.",
+      "id": "SJZRwCZ1u",
+      "label": "TXT",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-string"
+    }
+  ]
 }

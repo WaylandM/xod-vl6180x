@@ -1,6 +1,9 @@
 {
   "nodes": [
     {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
       "id": "BJ18KIyy_",
       "label": "UPD",
       "position": {
@@ -11,6 +14,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "Distance (millimetres).",
       "id": "BJlGK8J1O",
       "label": "DIST",
       "position": {
@@ -30,6 +34,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": "A VL61080X device.",
       "id": "HydIF81J_",
       "label": "DEV",
       "position": {
@@ -40,7 +45,18 @@
       "type": "@/input-vl6180x-device"
     },
     {
-      "description": "Status.",
+      "description": "Pulse on read.",
+      "id": "S1H6o0bku",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Status. Ranging success/error code:\n00h = success; 01h = system error; 05h = system error; 06h = early convergence estimate fail; 07h = no target detected; 08h = ignore threshold check failed; 0Bh = ambient conditions too high; 0Ch = raw range algo underflow; 0Dh = raw range algo overflow;\n0Eh = raw range algo underflow; 0Fh = raw range algo overflow.",
       "id": "S1KfKIkJu",
       "label": "STAT",
       "position": {
