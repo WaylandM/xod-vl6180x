@@ -1,4 +1,5 @@
 {
+  "description": "Patch to demonstrate sensor.",
   "links": [
     {
       "id": "B1NkmfG1O",
@@ -58,6 +59,7 @@
   ],
   "nodes": [
     {
+      "description": "Proximity and ambient light sensor. ",
       "id": "B1AqMfz1O",
       "position": {
         "units": "slots",
@@ -76,6 +78,9 @@
       "type": "xod/debug/watch"
     },
     {
+      "boundLiterals": {
+        "SykJ8wjXN": "02h"
+      },
       "id": "Hy2iGzf1_",
       "position": {
         "units": "slots",

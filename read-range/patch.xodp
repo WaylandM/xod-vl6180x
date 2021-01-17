@@ -1,9 +1,11 @@
 {
+  "description": "Read range (mm).",
   "nodes": [
     {
       "boundLiterals": {
         "__out__": "Continuously"
       },
+      "description": "Update. Trigger read.",
       "id": "BJ18KIyy_",
       "label": "UPD",
       "position": {

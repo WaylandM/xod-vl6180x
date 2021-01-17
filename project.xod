@@ -1,3 +1,6 @@
 {
-  "name": "vl6180x-time-of-flight"
+  "description": "VL6180X proximity and lux sensor. Wraps https://github.com/adafruit/Adafruit_VL6180X. Data sheet: https://cdn-learn.adafruit.com/assets/assets/000/037/608/original/VL6180X_datasheet.pdf",
+  "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+  "name": "vl6180x-time-of-flight",
+  "version": "0.0.3"
 }

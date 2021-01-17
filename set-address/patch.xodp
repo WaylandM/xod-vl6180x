@@ -1,4 +1,5 @@
 {
+  "description": "Set I²C address.",
   "nodes": [
     {
       "boundLiterals": {

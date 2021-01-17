@@ -13,6 +13,28 @@
       }
     },
     {
+      "id": "BJ6pgEzJO",
+      "input": {
+        "nodeId": "ByOpg4Gy_",
+        "pinKey": "SJ-1mZPTz"
+      },
+      "output": {
+        "nodeId": "ryuZB1fkO",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BkC3l4M1u",
+      "input": {
+        "nodeId": "HyekSJMJu",
+        "pinKey": "HydIF81J_"
+      },
+      "output": {
+        "nodeId": "S1C9lEfyu",
+        "pinKey": "__out__"
+      }
+    },
+    {
       "id": "BkRrIyG1u",
       "input": {
         "nodeId": "HJUNUkGJ_",
@@ -21,6 +43,17 @@
       "output": {
         "nodeId": "HyekSJMJu",
         "pinKey": "S1KfKIkJu"
+      }
+    },
+    {
+      "id": "Bkdy-4z1O",
+      "input": {
+        "nodeId": "r1OAgEfJd",
+        "pinKey": "Bkh8A_Sv1-"
+      },
+      "output": {
+        "nodeId": "HkgXeVfyd",
+        "pinKey": "B1_W7UJyu"
       }
     },
     {
@@ -35,6 +68,39 @@
       }
     },
     {
+      "id": "HJJbb4GJu",
+      "input": {
+        "nodeId": "r18gZEMJO",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "r1OAgEfJd",
+        "pinKey": "HkyxURuSPyW"
+      }
+    },
+    {
+      "id": "HJcng4fku",
+      "input": {
+        "nodeId": "SJv4P1G1O",
+        "pinKey": "r1nVj0-kO"
+      },
+      "output": {
+        "nodeId": "ryqsg4zJO",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HyS9xNz1_",
+      "input": {
+        "nodeId": "ryoFlEfyO",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "H181Hkz1d",
+        "pinKey": "B11vWIk1u"
+      }
+    },
+    {
       "id": "S1kI8kGyu",
       "input": {
         "nodeId": "HJGrU1zyd",
@@ -46,39 +112,6 @@
       }
     },
     {
-      "id": "SkAHvJGJO",
-      "input": {
-        "nodeId": "SJv4P1G1O",
-        "pinKey": "r1nVj0-kO"
-      },
-      "output": {
-        "nodeId": "H181Hkz1d",
-        "pinKey": "B11vWIk1u"
-      }
-    },
-    {
-      "id": "SkYJrJzkO",
-      "input": {
-        "nodeId": "HyekSJMJu",
-        "pinKey": "HydIF81J_"
-      },
-      "output": {
-        "nodeId": "H181Hkz1d",
-        "pinKey": "B11vWIk1u"
-      }
-    },
-    {
-      "id": "SkqBvJG1d",
-      "input": {
-        "nodeId": "SJv4P1G1O",
-        "pinKey": "rkxNjRbyd"
-      },
-      "output": {
-        "nodeId": "ryuZB1fkO",
-        "pinKey": "__out__"
-      }
-    },
-    {
       "id": "r1eFvJMkO",
       "input": {
         "nodeId": "HyekSJMJu",
@@ -87,6 +120,39 @@
       "output": {
         "nodeId": "SJv4P1G1O",
         "pinKey": "SJeiSkMyu"
+      }
+    },
+    {
+      "id": "rJ7JbNG1u",
+      "input": {
+        "nodeId": "HkgXeVfyd",
+        "pinKey": "r11E781J_"
+      },
+      "output": {
+        "nodeId": "H181Hkz1d",
+        "pinKey": "B11vWIk1u"
+      }
+    },
+    {
+      "id": "rkkRlVzJu",
+      "input": {
+        "nodeId": "SJv4P1G1O",
+        "pinKey": "rkxNjRbyd"
+      },
+      "output": {
+        "nodeId": "ByOpg4Gy_",
+        "pinKey": "OkPg7GDaW"
+      }
+    },
+    {
+      "id": "ry9WZ4MkO",
+      "input": {
+        "nodeId": "ByOpg4Gy_",
+        "pinKey": "B1P1nFwaM"
+      },
+      "output": {
+        "nodeId": "SJm--4Gy_",
+        "pinKey": "__out__"
       }
     },
     {
@@ -103,11 +169,20 @@
   ],
   "nodes": [
     {
+      "id": "ByOpg4Gy_",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 1
+      },
+      "type": "xod/core/gate"
+    },
+    {
       "id": "H181Hkz1d",
       "position": {
         "units": "slots",
-        "x": -1,
-        "y": 1
+        "x": 2,
+        "y": 0
       },
       "type": "@/vl6180x-device"
     },
@@ -117,7 +192,7 @@
       "label": "DONE",
       "position": {
         "units": "slots",
-        "x": 4,
+        "x": 9,
         "y": 4
       },
       "type": "xod/patch-nodes/output-pulse"
@@ -127,10 +202,19 @@
       "label": "STAT",
       "position": {
         "units": "slots",
-        "x": 2,
+        "x": 7,
         "y": 4
       },
       "type": "xod/patch-nodes/output-byte"
+    },
+    {
+      "id": "HkgXeVfyd",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "@/init"
     },
     {
       "description": "Lux",
@@ -138,7 +222,7 @@
       "label": "LUX",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 8,
         "y": 4
       },
       "type": "xod/patch-nodes/output-number"
@@ -147,19 +231,58 @@
       "id": "HyekSJMJu",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 6,
         "y": 3
       },
       "type": "@/read-range"
     },
     {
+      "id": "S1C9lEfyu",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "SJm--4Gy_",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
       "id": "SJv4P1G1O",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 6,
         "y": 2
       },
       "type": "@/read-lux"
+    },
+    {
+      "id": "r18gZEMJO",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "r1OAgEfJd",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/core/flip-flop"
     },
     {
       "description": "Distance",
@@ -167,7 +290,7 @@
       "label": "DIST",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 6,
         "y": 4
       },
       "type": "xod/patch-nodes/output-number"
@@ -178,10 +301,30 @@
       "label": "GAIN",
       "position": {
         "units": "slots",
-        "x": 2,
-        "y": 1
+        "x": 7,
+        "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "id": "ryoFlEfyO",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "ryqsg4zJO",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
     },
     {
       "boundLiterals": {
@@ -192,8 +335,8 @@
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 3,
-        "y": 1
+        "x": 8,
+        "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
     }

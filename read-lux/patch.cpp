@@ -6,8 +6,8 @@ node {
              return;
          // Get a pointer to the `VL6180X` class instance
          auto sensor = getValue<input_DEV>(ctx);
-         float lux = sensor->readLux(getValue<input_GAIN>(ctx));
-         emitValue<output_LUX>(ctx,lux);
+         uint8_t gain = getValue<input_GAIN>(ctx);
+         emitValue<output_LUX>(ctx,sensor->readLux(gain));
          emitValue<output_DONE>(ctx,1);
     }
 }

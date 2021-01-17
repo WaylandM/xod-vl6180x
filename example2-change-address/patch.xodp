@@ -1,29 +1,275 @@
 {
+  "comments": [
+    {
+      "content": "We start by resetting the VL6180X device by togelling the shutdown pin on the breakout board. First we set the pin low to shutdown the VL6180X.",
+      "id": "HJ3Yo7fkd",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 0
+      },
+      "size": {
+        "height": 2,
+        "units": "slots",
+        "width": 8
+      }
+    },
+    {
+      "content": "The default I²C address of the VL6180X device is 29h. You can change the I²C address of the device using the set-address node. If the device is reset the I²C address will return to the default. \n\n",
+      "id": "S1WY87Gyd",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 4
+      },
+      "size": {
+        "height": 2,
+        "units": "slots",
+        "width": 10
+      }
+    },
+    {
+      "content": "Wake the VL6180X by setting shutdown pin high.",
+      "id": "SJz9pXG1_",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 2
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 8
+      }
+    },
+    {
+      "content": "N.B. If we were to reset the microcontroller board WITHOUT RESETTING the VL6180X we would only be able to run the patch once. On the first run the address of the VL6180X would be set to 30h. If the microcontroller board was then reset, the patch would run again from the beginning. However, if the VL6180X continued to be powered on, it would retain its new address of 30h. Initialization would fail on the 2nd run of the patch, because the init node expects the VL6180X to have the default address of 29h, but it would actually be 30h.\n",
+      "id": "ryl_CXG1_",
+      "position": {
+        "units": "slots",
+        "x": 18,
+        "y": 0
+      },
+      "size": {
+        "height": 2,
+        "units": "slots",
+        "width": 12
+      }
+    }
+  ],
+  "description": "Patch to demonstrate changing I²C address of VL6180X.",
+  "links": [
+    {
+      "id": "BJ1GdmMk_",
+      "input": {
+        "nodeId": "HyYZ_7M1d",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "H1C-7zMkd",
+        "pinKey": "HJ4pmyfJd"
+      }
+    },
+    {
+      "id": "BJnesXMJO",
+      "input": {
+        "nodeId": "SJvW7Gfku",
+        "pinKey": "ByyblJzyd"
+      },
+      "output": {
+        "nodeId": "rkYxj7GJO",
+        "pinKey": "B23RV3eJq"
+      }
+    },
+    {
+      "id": "Bkt08Qfkd",
+      "input": {
+        "nodeId": "SJvW7Gfku",
+        "pinKey": "ryIDeyM1d"
+      },
+      "output": {
+        "nodeId": "SJ_a8Xfy_",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ByTbvmzkd",
+      "input": {
+        "nodeId": "SJvW7Gfku",
+        "pinKey": "HyMMxkfkO"
+      },
+      "output": {
+        "nodeId": "Bys-QzMyu",
+        "pinKey": "B1_W7UJyu"
+      }
+    },
+    {
+      "id": "H1PJdXfy_",
+      "input": {
+        "nodeId": "Hy1nwQzyu",
+        "pinKey": "BygApTqym"
+      },
+      "output": {
+        "nodeId": "S14hIQz1O",
+        "pinKey": "Bk4gU0drwJ-"
+      }
+    },
+    {
+      "id": "Hk35ImfJ_",
+      "input": {
+        "nodeId": "B1XqIQM1_",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "Skbbmff1u",
+        "pinKey": "B11vWIk1u"
+      }
+    },
+    {
+      "id": "S1nTUQMyu",
+      "input": {
+        "nodeId": "H1C-7zMkd",
+        "pinKey": "Byg_7yMy_"
+      },
+      "output": {
+        "nodeId": "ByvaIQMkd",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SkckOXG1d",
+      "input": {
+        "nodeId": "Bys-QzMyu",
+        "pinKey": "S1sAf8JyO"
+      },
+      "output": {
+        "nodeId": "Hy1nwQzyu",
+        "pinKey": "ry3pcpqyX"
+      }
+    },
+    {
+      "id": "Sye1OQfJu",
+      "input": {
+        "nodeId": "S14hIQz1O",
+        "pinKey": "SkSuD6LMb"
+      },
+      "output": {
+        "nodeId": "r1eiDmf1u",
+        "pinKey": "ry3pcpqyX"
+      }
+    },
+    {
+      "id": "rkRpIXGy_",
+      "input": {
+        "nodeId": "Bys-QzMyu",
+        "pinKey": "r11E781J_"
+      },
+      "output": {
+        "nodeId": "r1esLmGy_",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryckP7z1d",
+      "input": {
+        "nodeId": "H1C-7zMkd",
+        "pinKey": "S1oKQkz1u"
+      },
+      "output": {
+        "nodeId": "SJvW7Gfku",
+        "pinKey": "rJu8g1MJO"
+      }
+    }
+  ],
   "nodes": [
+    {
+      "id": "B1XqIQM1_",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
     {
       "id": "Bys-QzMyu",
       "position": {
         "units": "slots",
-        "x": 1,
-        "y": 2
+        "x": 4,
+        "y": 3
       },
       "type": "@/init"
+    },
+    {
+      "id": "ByvaIQMkd",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/from-bus"
     },
     {
       "id": "H1C-7zMkd",
       "position": {
         "units": "slots",
         "x": 1,
-        "y": 3
+        "y": 5
       },
       "type": "@/get-address"
+    },
+    {
+      "boundLiterals": {
+        "HJ6HsEngZ": "True",
+        "rJjXFA9JQ": "D3"
+      },
+      "id": "Hy1nwQzyu",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/gpio/digital-write"
+    },
+    {
+      "id": "HyYZ_7M1d",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 6
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "boundLiterals": {
+        "Skre8ROSv1-": "0.05"
+      },
+      "id": "S14hIQz1O",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 1
+      },
+      "type": "xod/core/delay"
+    },
+    {
+      "id": "SJ_a8Xfy_",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
     },
     {
       "id": "SJvW7Gfku",
       "position": {
         "units": "slots",
-        "x": 1,
-        "y": 1
+        "x": 2,
+        "y": 4
       },
       "type": "@/set-address"
     },
@@ -35,6 +281,42 @@
         "y": 0
       },
       "type": "@/vl6180x-device"
+    },
+    {
+      "boundLiterals": {
+        "BygApTqym": "On Boot",
+        "HJ6HsEngZ": "False",
+        "rJjXFA9JQ": "D3"
+      },
+      "id": "r1eiDmf1u",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/gpio/digital-write"
+    },
+    {
+      "id": "r1esLmGy_",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "B23RV3eJq": "30h"
+      },
+      "id": "rkYxj7GJO",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/core/constant-byte"
     }
   ]
 }
