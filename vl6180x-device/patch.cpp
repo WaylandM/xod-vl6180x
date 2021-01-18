@@ -3,7 +3,6 @@
 
 //Include C++ libraries
 #include <Adafruit_VL6180X.h>
-//#include "<Arduino.h>"
 #include <Wire.h>
 
 
@@ -13,7 +12,7 @@ node {
         using Type = Adafruit_VL6180X*;
     }
 
-    // Create an object of the class VL53L1XMTW
+    // Create an object of the class VL6180X
     Adafruit_VL6180X sensor = Adafruit_VL6180X();
 
     void evaluate(Context ctx) {

@@ -198,6 +198,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "description": "Status. Ranging success/error code:\n00h = success; 01h = system error; 05h = system error; 06h = early convergence estimate fail; 07h = no target detected; 08h = ignore threshold check failed; 0Bh = ambient conditions too high; 0Ch = raw range algo underflow; 0Dh = raw range algo overflow;\n0Eh = raw range algo underflow; 0Fh = raw range algo overflow.",
       "id": "HJUNUkGJ_",
       "label": "STAT",
       "position": {
@@ -285,7 +286,7 @@
       "type": "xod/core/flip-flop"
     },
     {
-      "description": "Distance",
+      "description": "Distance (millimetres).",
       "id": "rkH7Iyf1d",
       "label": "DIST",
       "position": {
