@@ -30,7 +30,7 @@
       "label": "INIT",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 2,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
@@ -45,6 +45,17 @@
         "y": 0
       },
       "type": "@/input-vl6180x-device"
+    },
+    {
+      "description": "I²C bus",
+      "id": "rJuGRZh6Y",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/i2c/input-i2c"
     }
   ]
 }

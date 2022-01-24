@@ -1,3 +1,4 @@
+#pragma XOD dirtieness disable
 
 node {
     char str[24];
