@@ -84,7 +84,7 @@
       "id": "Hy2iGzf1_",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 4,
         "y": 0
       },
       "type": "xod/debug/tweak-byte"
